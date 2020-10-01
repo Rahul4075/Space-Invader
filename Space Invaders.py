@@ -18,7 +18,7 @@ textRect.center=(width//2,height//2)
 
 score=0
 
-a=0
+temp_variable=0
 
 code_hub_=pygame.image.load('icon.png')
 
@@ -122,11 +122,11 @@ while loop:
 		if gameover(playerx,alienx[i],playery,alieny[i]):
 			alienx[i]=random.randint(32,750)	
 			alieny[i]=random.randint(0,200)
-			a=1
+			temp_variable=1
 
 
 
-	if a==1:
+	if temp_variable==1:
 		screen.blit(text,textRect)		
 	if bullet_fired:
 		bullety+=bullety_change
